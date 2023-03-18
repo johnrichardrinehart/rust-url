@@ -28,7 +28,7 @@ pub mod mime;
 
 pub struct DataUrl<'a> {
     mime_type: mime::Mime,
-    base64: bool,
+    pub base64: bool,
     encoded_body_plus_fragment: &'a str,
 }
 
